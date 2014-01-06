@@ -1,4 +1,5 @@
 Cook4me::Application.routes.draw do
+  get "customers/profile"
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -54,4 +55,7 @@ Cook4me::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root 'menu#index'
+  get 'customers/profile', as: 'user_root'
+  resources :menus
 end
