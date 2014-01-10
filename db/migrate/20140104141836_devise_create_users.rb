@@ -30,6 +30,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
+      ## Add UserType depending (rooss)
+      t.integer  :user_type_id
 
       t.timestamps
     end
@@ -38,5 +40,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
     add_index :users, :reset_password_token, :unique => true
     # add_index :users, :confirmation_token,   :unique => true
     # add_index :users, :unlock_token,         :unique => true
+
+    ## Add UserType depending (rooss)
+    add_index :users, :user_type_id
   end
 end
