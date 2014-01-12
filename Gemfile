@@ -29,17 +29,20 @@ end
 # in production environments by default.
 group :assets do
   gem 'therubyracer'
-  gem 'sass-rails', '~> 4.0.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'uglifier', '>= 1.3.0'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
 gem 'haml'
 gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
-gem 'foundation-rails'
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

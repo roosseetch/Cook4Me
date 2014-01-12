@@ -3,7 +3,7 @@ class CreateCurrencies < ActiveRecord::Migration
     create_table :currencies do |t|
       t.string :name
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end
