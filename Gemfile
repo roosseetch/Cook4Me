@@ -39,6 +39,7 @@ gem 'haml'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'bootstrap-sass'
 group :development do
   gem 'rails_layout'

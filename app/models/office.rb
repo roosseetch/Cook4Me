@@ -1,8 +1,11 @@
 class Office < ActiveRecord::Base
     belongs_to :country
     belongs_to :city
-    has_one :catering
+
+    has_many :clients
+    has_many :orders
     has_many :phones
+
 
     validates :name, :address, :image_url, presence: true
     # validates :price, numericality: {greater_than_or_equal_to: 0.01}

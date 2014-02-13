@@ -1,4 +1,6 @@
 Cook4me::Application.routes.draw do
+  resources :chefs
+
   resources :offices
 
   devise_for :users
